@@ -1,0 +1,105 @@
+.created {
+    padding: 14.3rem 0 11.8rem;
+    background: $black;
+}
+.created-content {
+    margin-bottom: 12.7rem;
+    position: relative;
+    display: flex;
+}
+.created-content__info {
+    width: 55.77%;
+    margin-right: 5.3rem;
+}
+.created-content__info-title {
+    margin-bottom: 5rem;
+    font-size: 3.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $white;
+}
+.created-content__info-list {
+    margin: 0;
+    padding: 0;
+    color: $white;
+    list-style: none;
+}
+.created-content__info-item {
+    position: relative;
+    margin-bottom: 2.4rem;
+    padding-left: 4rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.33;
+    color: $white;
+
+    &:last-child {
+        margin-bottom: 5rem;
+    }
+    &:before {
+        content: "";
+        position: absolute;
+        width: 0.8rem;
+        height: 0.8rem;
+        border-radius: 50%;
+        background-color: $white;
+        top: 0.9rem;
+        left: 0;
+        z-index: 2;
+    }
+}
+.created__info-item-title {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.33;
+    color: $white;
+}
+.created__info-item-txt {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgba($white, .75);
+}
+.created-content__iphone {
+    position: absolute;
+    width: 100%;
+    max-width: 60.6rem;
+    top: 0;
+    right: -19.2rem;
+}
+.created-content__iphone-img {
+    display: block;
+    width: 100%;   
+    height: auto;
+}
+.buttons {
+    display: flex;
+    align-items: center;
+}
+.created-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.created-footer__item {
+    width: 32.1%;
+    max-width: 34rem;
+    text-align: center;
+}
+.created-footer__item-img {
+    margin: 0 auto 2rem;
+}
+.created-footer__item-title {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.33;
+    color: $white;
+}
+.created-footer__item-txt {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgba($white, 0.75);
+}

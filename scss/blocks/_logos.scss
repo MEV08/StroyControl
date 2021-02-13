@@ -1,0 +1,24 @@
+.logos {
+    margin: 5.6rem 0;
+}
+.logos-block {
+    display: flex;
+    flex-wrap: wrap;
+}
+.logos-block__item  {
+    margin-right: 3.9rem;
+    display: flex;
+    align-items: center;
+
+    &:nth-child(5) {
+        margin-right: 0;
+    }
+    &:last-child {
+        margin: 0 auto;
+    }
+}
+.logos-block__img {  
+    display: block;
+    width: 100%;
+    max-width: 18rem;
+}

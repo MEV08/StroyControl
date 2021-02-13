@@ -1,0 +1,65 @@
+.howtowork {
+    margin: 14.3rem 0 9.6rem;
+}
+.howtowrk-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.howtowork-left {
+    width: 43.7%;
+    max-width: 46.2rem;
+}
+.howtowork-left__title {
+    margin-bottom: 2.1rem;
+    font-size: 3.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $black;
+}
+.howtowork-left__txt {
+    margin-bottom: 6rem;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: $grey;
+}
+.howtowrk-left__img {
+    display: block;
+    width: 100%;
+    max-width: 33.6rem;
+    height: auto;
+}
+.howtowork-right {
+    width: 49.2%;
+    max-width: 52rem;
+}
+.howtowrk-right__item {
+    margin-bottom: 3rem;
+    padding-left: 7.2rem;
+    position: relative;
+}
+.howtowork-right__item-num {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $light-grey;
+    top: 0;
+    left: 0;
+}
+.howtowork-right__item-title {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.41;
+    color: $black;
+}
+.howtowork-right__item-txt {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $grey;
+}

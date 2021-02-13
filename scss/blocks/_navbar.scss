@@ -1,0 +1,21 @@
+
+.header-nav {
+    margin-right: 2rem;
+    display: flex;
+    align-items: center;
+}
+.header-nav__link {
+    margin-right: 2.2rem;
+    color: $grey;
+    text-decoration: none;
+
+    &:last-child {
+        margin-right: 0;
+    }
+    &:hover {
+        color: $blue;
+    }
+}
+.link-active {
+    color: $blue;
+}

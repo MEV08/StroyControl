@@ -1,0 +1,57 @@
+@import "vars";
+
+html {
+    font-size: 62.5%;
+}
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: $black;
+    background-color: $white;
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+}
+h1, h2, h3, h4, h5, h6, p, hr {
+    margin: 0;
+}
+// container (192px)
+.container-1 {
+    width: 100%;
+    max-width: 1086px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+// container (200px)
+.container-2 {
+    width: 100%;
+    max-width: 1070px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* Blocks */
+@import "blocks/header";
+@import "blocks/intro";
+@import "blocks/btn";
+@import "blocks/navbar";
+@import "blocks/improvements";
+@import "blocks/construction";
+@import "blocks/care";
+@import "blocks/logos";
+@import "blocks/delimiter";
+@import "blocks/about";
+@import "blocks/delivery";
+@import "blocks/reliability";
+@import "blocks/created";
+@import "blocks/howtowork";
+@import "blocks/clients";
+@import "blocks/contact";
+@import "blocks/footer";
+

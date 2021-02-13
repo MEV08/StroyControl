@@ -1,0 +1,13 @@
+.footer-inner {
+    padding: 3.2rem 0 3.3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-top: 1px solid $light-grey;
+}
+.footer-txt {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $grey;
+}

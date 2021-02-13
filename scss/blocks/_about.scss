@@ -1,0 +1,109 @@
+.about {
+    margin: 7.9rem 0 14.3rem;
+}
+.about-title {
+    font-size: 3.2rem;  
+    font-weight: 400;
+    line-height: 1.5;
+    color: $black;
+    text-align: center;
+}
+.about-title__txt {
+    padding: 2.1rem 11.4rem 2.8rem 11.5rem;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: $grey;
+    text-align: center;
+}
+.about-block__delivery {
+    margin-bottom: 6.4rem;
+    margin-right: 6.3rem;
+    display: flex;
+}
+.about-block__delivery-info {
+    max-width: 59.6%;
+    padding-right: 9.1rem;
+}
+.about-block__delivery-title {
+    margin-top: 6.7rem;
+    margin-bottom: 1.9rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.33;
+    color: $black;
+}
+.about-block__delivery-txt {
+    max-width: 50rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $grey;
+}
+.about-block__delivery-img {
+    width: 40.4%;
+}
+.delivery-img {
+    display: block;
+    width: 100%;
+    max-width: 40.2rem;
+    height: auto;
+}
+.about-block__control {  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 8.2rem;
+    margin-bottom: 6.4rem;
+}
+.about-block__control-img {
+    width: 36.8%;
+}
+.control-img {
+    display: block;
+    width: 100%;
+    max-width: 35.8rem;
+    height: auto;
+}
+.about-block__control-info {
+    max-width: 52.87%;
+}
+.about-block__control-title {
+    margin-top: 6.7rem;
+    margin-bottom: 1.9rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.33;
+    color: $black;
+}
+.about-block__control-txt {
+    padding-right: 1.5rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $grey;
+}
+.about-block__data {
+    margin-right: 5.6rem;
+    display: flex;
+}
+.about-block__data-info {
+    max-width: 55rem;
+}
+.about-block__data-title {
+    margin: 5.5rem 0 1.9rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.33;
+    color: $black;
+}
+.about-block__data-txt {
+    padding-right: 5rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $grey;
+}
+.about-block__data-img {
+    margin-left: 3.4rem;
+}

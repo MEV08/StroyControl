@@ -1,0 +1,76 @@
+.delivery {
+    margin-bottom: 12.4rem;
+}
+.delivery-title {
+    margin-bottom: 2.1rem;
+    font-size: 3.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $black;
+    text-align: center;
+}
+.delivery-subtitle {
+    margin-bottom: 4.3rem;
+    padding-right: 20.7rem;
+    padding-left: 20.6rem;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: $grey;
+    text-align: center;
+}
+.delivery-blocks__row {
+    margin-bottom: 3.3rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    &:last-child {
+        margin-bottom: 2.2rem;
+    }
+}
+.delivery-blocks__item {
+    margin-right: 2.7rem;
+    padding-left: 6.4rem;
+    width: 33.3333%;
+    max-width: 33.4rem;
+    position: relative;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+.delivery-blocks__item-img {
+    position: absolute;
+    width: 4.8rem;
+    height: 4.8rem;
+    top: 0;
+    left: 0;
+}
+.delivery-blocks__item-title {
+    margin-bottom: 1.1rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.35;
+    color: $black;
+}
+.delivery-blocks__item-txt {
+    padding: 0.15rem 0;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $grey;
+}
+.delivery-footer {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: $grey;
+}
+.delivery-footer__colored-txt {
+    margin-right: .4rem;
+    background: url(/img/delivery/delivery-footer-bg.png) center bottom no-repeat;
+    color: $black;
+}

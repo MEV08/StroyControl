@@ -1,0 +1,43 @@
+.care {
+    margin-bottom: 7.1rem;
+}
+.care-main {
+    margin-right: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.care-main__left {
+    width: 54%;
+}
+.care-main__left-title {
+    margin-bottom: 1.6rem;
+    font-size: 3.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $black;
+}
+.care-main__left-txt {
+    margin-bottom: 2.8rem;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: $grey;
+}
+.care-main__left-slogan {
+    width: 25rem;
+    height: 3.2rem;
+    background: url(/img/slogan-bg.png) bottom no-repeat;
+    font-size: 2rem;    
+    font-weight: 400;
+    line-height: 1.6;
+    color: $black;
+}
+.care-main__right {
+    width: 46%;
+}
+.care-main__img {
+    display: block;
+    width: 100%;
+    max-width: 46.4rem;
+    height: auto;
+}

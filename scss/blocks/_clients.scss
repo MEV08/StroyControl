@@ -1,0 +1,151 @@
+.clients {
+    margin-bottom: 14.9rem;
+}
+.clients-title {
+    margin-bottom: 1.7rem;
+    font-size: 3.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $black;
+    text-align: center;
+}
+.clients-subtitle {
+    margin-bottom: 5.5rem;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: $black;
+    text-align: center;
+}
+.clients-inner {
+    margin-bottom: 12.7rem;
+    display: flex;
+    flex-wrap: wrap;
+    // 
+    position: relative;
+    // 
+}
+.clients-advantages {
+    margin-right: 7.8rem;
+    width: 43.3%;
+}
+.clients-advantages__item {
+    margin-bottom: 3rem;
+    position: relative;
+    padding-left: 6.4rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+    &:nth-child(2) {
+        padding-right: 3.8rem;
+    }
+    &:nth-child(3) {
+        padding-right: 1.8rem;
+    }
+}
+.clients__item-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.clients-item__title {
+    margin-bottom: 1rem;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.33;
+    color: $black;
+}
+.clients-item__txt {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $grey;
+}
+.clients-reviews {
+    width: 61.4rem;
+    height: 51.6rem;
+    background-color: #F6F8F9;
+    border-radius: 5px;
+    // 
+    position: absolute;
+    padding: 4.5rem 9.2rem 5.6rem 4.1rem;
+    top: 0;
+    right: -9.4rem;
+    // 
+}
+.clients-reviews__item {
+    padding-top: 1.5rem;
+    padding-left: 4.5rem;
+    position: relative;
+}
+.clients-reviews__item-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.clients-reviews__item-txt {
+    margin-bottom: 2.8rem;
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: $black;
+}
+.clients-person {
+    display: flex;
+}
+.clients-preson__info {
+    padding-top: 0.4rem;
+    padding-left: 0.8rem;
+}
+.clients-person__name {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.18;
+    color: $black;
+}
+.clients-person__position {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.18;
+    color: $grey;
+}
+.clients-logos {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 67.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.clients-logos__item {  
+    position: relative;
+    padding-top: 14.4rem;
+    margin-bottom: 4.1rem; 
+    height: 20.1rem;
+    text-align: center;
+    &:nth-child(1) {
+        margin-right: 11.9rem;
+        max-width: 12.6rem;
+    }
+    &:nth-child(2) {
+        margin-right: 10.1rem;
+        max-width: 16.4rem;
+    }
+    &:nth-child(3) {
+        max-width: 16.2rem;
+    }
+    &:nth-child(4) {
+        margin-bottom: 0;
+        max-width: 18.4rem;
+    }
+}
+.clients-logos__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    &--second {
+        top: 1.2rem;
+    }
+}

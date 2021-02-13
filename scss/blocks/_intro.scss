@@ -1,0 +1,33 @@
+.intro {
+    margin-top: 7.4rem;
+}
+.intro-title {
+    font-size: 4.8rem;
+    line-height: 6.4rem;
+    padding: 0 11.1rem;
+    text-align: center;
+    font-weight: 400;
+    color: $black;
+}
+.buttons-block {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+}
+.intro-img {
+    
+    text-align: center;
+    margin-bottom: 14.8rem;
+}
+.intro-img__main {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 8.8rem;
+    margin-bottom: 3.6rem;
+}
+.intro-img__bottom {
+    display: block;
+    width: 100%;
+    height: auto;
+}

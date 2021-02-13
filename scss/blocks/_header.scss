@@ -1,0 +1,30 @@
+.header {
+    width: 100%;
+    max-width: 144rem;
+    height: 9.6rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // 
+    overflow: hidden;
+    // 
+}
+.header-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-height: 44px;
+}
+.header-logo__img {
+    height: 44px;
+}
+.header-logo__txt {
+    margin: .85rem 0 .85rem .8rem;
+    font-size: 2.2rem;
+    color: $black;
+    text-transform: uppercase;
+}
+.header-navbar {
+    display: flex;
+}

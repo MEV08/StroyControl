@@ -1,0 +1,95 @@
+.reliability {
+    margin-bottom: 14.4rem;
+}
+.reliability-header {
+    margin: 0 auto 1.7rem;
+    width: 22.92rem;
+    height: 6.65rem;
+    position: relative;
+}
+.reliability-header__img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.reliability-header__title {
+    position: absolute;
+    font-size: 3.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $black;
+    left: 0;
+    bottom: 0;
+}
+.reliability-main {
+    margin-bottom: 6.2rem;
+}
+.reliability-main__txt {
+    margin: 0 10rem 4.8rem 9.9rem;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: $grey;
+    text-align: center;
+}
+.reliability-main__block {
+    display: flex;
+}
+.reliability-main__block-item {
+    margin-right: 3.3rem;
+    width: 33.3333%;
+    max-height: 24.6rem;
+    text-align: center;
+
+    &:last-child {
+        margin-right: 0;
+    }
+    &:nth-child(1) {
+        max-width: 33.2rem;
+    }
+    &:nth-child(2) {
+        max-width: 33.3rem;
+    }
+    &:nth-child(3) {
+        max-width: 32.5rem;
+    }
+}
+.reliability-block__item-img {
+    margin-bottom: 1.9rem;
+}
+.reliability-block__item-title {
+    margin-bottom: 1.1rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.33;
+    color: $black;
+}
+.reliability-block__item-txt {
+    min-height: 14.4rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $grey;
+}
+.reliability-footer {
+    padding: 4rem;
+    min-height: 13rem;
+    
+    background: #F6F8F9;
+    border-radius: 5px;
+}
+.reliability-footer__content {
+    display: flex;
+    align-items: center;
+}
+.reliability-footer__logo-img {
+    width: 3.567rem;
+    height: 3.617rem;
+}
+.reliability-footer__txt {
+    padding: .9rem 6.6rem .9rem 2.617rem ;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 2;
+    color: $black;
+}
