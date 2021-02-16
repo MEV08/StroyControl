@@ -1,8 +1,17 @@
+.header-navbar {
+    display: flex;
 
+    @include breakpoint($tablet-bp-wide) {
+        display: none;
+    }
+}
 .header-nav {
     margin-right: 2rem;
     display: flex;
     align-items: center;
+    @include breakpoint($desktop-sm) {
+        margin-right: 1rem;
+    }
 }
 .header-nav__link {
     margin-right: 2.2rem;
@@ -14,6 +23,10 @@
     }
     &:hover {
         color: $blue;
+    }
+
+    @include breakpoint($desktop-sm) {
+        margin-right: 0.8rem;
     }
 }
 .link-active {

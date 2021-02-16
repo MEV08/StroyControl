@@ -1,14 +1,18 @@
 .header {
+    position: relative;
+    padding: 0 1.5rem;
     width: 100%;
-    max-width: 144rem;
+    max-width: 147rem;
     height: 9.6rem;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // 
-    overflow: hidden;
-    // 
+
+    @include breakpoint($tablet-bp) {
+        height: auto;
+        padding: 1rem;
+    }
 }
 .header-logo {
     display: flex;
@@ -25,6 +29,4 @@
     color: $black;
     text-transform: uppercase;
 }
-.header-navbar {
-    display: flex;
-}
+

@@ -20,10 +20,18 @@
 .contact-nav {
     display: flex;
     flex-wrap: wrap;
+
+    @include breakpoint($tablet-bp-wide) {
+        justify-content: space-between;
+    }
 }
 .contact-detail {
     display: flex;
     flex-direction: column;
+
+    @include breakpoint($tablet-bp-wide) {
+        width: 20%;
+    }
 }
 .contact-logo {
     margin-bottom: 2.2rem;
@@ -67,6 +75,11 @@
     display: flex;
     flex-direction: column;
     margin-left: 16rem;
+
+    @include breakpoint($tablet-bp-wide) {
+        margin-left: 0;
+        width: 20%;
+    }
 }
 .contact-nav__title {
     margin-bottom: 2.2rem;

@@ -16,9 +16,25 @@
     &:last-child {
         margin: 0 auto;
     }
+
+    @include breakpoint($tablet-bp-wide) {
+        margin-right: 1.9rem;
+        
+
+        &:nth-child(5) {
+            margin-right: 1.9rem;
+        }
+        &:last-child {
+            margin: 0;
+        }
+    }
 }
 .logos-block__img {  
     display: block;
     width: 100%;
     max-width: 18rem;
+
+    @include breakpoint($tablet-bp-wide) {
+        max-width: 15rem;
+    }
 }

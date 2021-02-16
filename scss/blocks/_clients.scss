@@ -28,6 +28,13 @@
 .clients-advantages {
     margin-right: 7.8rem;
     width: 43.3%;
+    @include breakpoint($desktop-sm) {
+        margin-right: 0;
+        margin-bottom: 2rem;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 .clients-advantages__item {
     margin-bottom: 3rem;
@@ -42,6 +49,10 @@
     }
     &:nth-child(3) {
         padding-right: 1.8rem;
+    }
+    @include breakpoint($desktop-sm) {
+        padding-right: 0;
+        width: 50%;
     }
 }
 .clients__item-img {
@@ -63,8 +74,8 @@
     color: $grey;
 }
 .clients-reviews {
-    width: 61.4rem;
-    height: 51.6rem;
+    max-width: 61.4rem;
+    max-height: 51.6rem;
     background-color: #F6F8F9;
     border-radius: 5px;
     // 
@@ -72,7 +83,11 @@
     padding: 4.5rem 9.2rem 5.6rem 4.1rem;
     top: 0;
     right: -9.4rem;
-    // 
+    @include breakpoint($desktop-sm) {
+        position: static;
+        width: 100%;
+        max-width: 105rem;
+    }
 }
 .clients-reviews__item {
     padding-top: 1.5rem;
@@ -117,6 +132,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
+    @include breakpoint($tablet-bp-wide) {
+        margin: 0;
+        max-width: 100%;
+        justify-content: space-between;
+    }
 }
 .clients-logos__item {  
     position: relative;
@@ -138,6 +159,22 @@
     &:nth-child(4) {
         margin-bottom: 0;
         max-width: 18.4rem;
+    }
+    @include breakpoint($tablet-bp-wide) {
+        width: 20%;
+
+        &:nth-child(1) {
+            margin-right: 0;
+        }
+        &:nth-child(2) {
+            margin-right: 0;
+        }
+        &:nth-child(3) {
+            margin-right: 0;
+        }
+        &:nth-child(4) {
+            margin-bottom: 4.1rem; 
+        }
     }
 }
 .clients-logos__img {

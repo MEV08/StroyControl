@@ -19,6 +19,13 @@
     color: $grey;
     text-align: center;
 }
+.delivery-blocks {
+    @include breakpoint($tablet-bp-wide) {
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+}
 .delivery-blocks__row {
     margin-bottom: 3.3rem;
     display: flex;
@@ -27,6 +34,11 @@
 
     &:last-child {
         margin-bottom: 2.2rem;
+    }
+    @include breakpoint($tablet-bp-wide) {
+        width: 30%;
+        flex-direction: column;
+        flex-wrap: nowrap;
     }
 }
 .delivery-blocks__item {
@@ -38,6 +50,15 @@
 
     &:last-child {
         margin-right: 0;
+    }
+    @include breakpoint($desktop-sm) {
+        margin-right: 0.7rem;
+    }
+    @include breakpoint($tablet-bp-wide) {
+        width: 100%;
+        height: 32%;
+        margin-right: 0;
+        margin-bottom: 3rem;
     }
 }
 .delivery-blocks__item-img {
