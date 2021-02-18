@@ -370,6 +370,7 @@ h1, h2, h3, h4, h5, h6, p, hr {
 }
 
 .btn--extra {
+  padding: 0.72em 1em;
   min-width: 20.3rem;
 }
 

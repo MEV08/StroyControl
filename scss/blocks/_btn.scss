@@ -88,6 +88,7 @@
         max-width: 16.8rem;
     }
     &--extra {
+        padding: 0.72em 1em;
         min-width: 20.3rem;
     }
     @include breakpoint($mobile-bp-sm) {
