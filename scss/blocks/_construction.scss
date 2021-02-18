@@ -1,9 +1,16 @@
 .construction {
     margin-bottom: 16.8rem;
+
+    @include breakpoint($mobile-bp-sm) {
+        margin-bottom: 7.8rem;
+    }
 }
 .construction-main {
     margin-bottom: 14.4rem;
     text-align: center;
+    @include breakpoint($mobile-bp) {
+        margin-bottom: 6.4rem;
+    }
 }
 .construction-title {
     margin-bottom: 1.6rem;
@@ -11,7 +18,9 @@
     font-weight: 400;
     line-height: 1.5;
     color: $black;
-    
+    @include breakpoint($mobile-bp-ultra-sm) {
+        font-size: 2.2rem;
+    }
 }
 .construction-text {
     margin: 0 1.3rem 4rem 1.2rem;
@@ -19,7 +28,10 @@
     font-weight: 400;
     line-height: 1.6;
     color: $grey;
-    
+    @include breakpoint($mobile-bp) {
+        margin: 0 0 3rem;
+        font-size: 1.5rem;
+    }
 }
 .construction-img {
     display: block;
@@ -30,10 +42,19 @@
     margin-left: 13rem;
     margin-right: 12.9rem;
     text-align: center;
+    @include breakpoint($mobile-bp) {
+        margin: 0;
+    }
 }
 .construction-footer__title {
     font-size: 3.2rem;
     font-weight: 400;
     line-height: 1.5;
     color: $black;
+    @include breakpoint($mobile-bp) {
+        font-size: 2.2rem;
+    }
+    @include breakpoint($mobile-bp-sm) {
+        font-size: 1.5rem;
+    }
 }

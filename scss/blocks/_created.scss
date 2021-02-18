@@ -2,6 +2,9 @@
     padding: 14.3rem 0 11.8rem;
     background: $black;
     overflow: hidden;
+    @include breakpoint($mobile-bp-ultra-sm) {
+        padding: 6.3rem 0 5.8rem;
+    }
 }
 .created-content {
     margin-bottom: 12.7rem;
@@ -10,10 +13,17 @@
     @include breakpoint($desktop-sm) {
         overflow: hidden;
     }
+    @include breakpoint($mobile-bp-ultra-sm) {
+        margin-bottom: 6rem;
+    }
 }
 .created-content__info {
     width: 55.77%;
     margin-right: 5.3rem;
+    @include breakpoint($mobile-bp-sm) {
+        width: 100%;
+        margin-right: 0;
+    }
 }
 .created-content__info-title {
     margin-bottom: 5rem;
@@ -21,6 +31,10 @@
     font-weight: 400;
     line-height: 1.5;
     color: $white;
+    @include breakpoint($mobile-bp-ultra-sm) {
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+    }
 }
 .created-content__info-list {
     margin: 0;
@@ -39,6 +53,9 @@
 
     &:last-child {
         margin-bottom: 5rem;
+        @include breakpoint($mobile-bp-sm) {
+            margin-bottom: 3rem;
+        }
     }
     &:before {
         content: "";
@@ -50,6 +67,9 @@
         top: 0.9rem;
         left: 0;
         z-index: 2;
+    }
+    @include breakpoint($mobile-bp-ultra-sm) {
+        padding-left: 2rem;
     }
 }
 .created__info-item-title {
@@ -64,6 +84,9 @@
     font-weight: 400;
     line-height: 1.5;
     color: rgba($white, .75);
+    @include breakpoint($mobile-bp-ultra-sm) {
+        font-size: 1.4rem;
+    }
 }
 .created-content__iphone {
     position: absolute;
@@ -74,6 +97,9 @@
     @include breakpoint($desktop-sm) {
         position: static;
         width: 42%;
+    }
+    @include breakpoint($mobile-bp-sm) {
+        display: none;
     }
 }
 .created-content__iphone-img {
@@ -90,7 +116,14 @@
 }
 .buttons {
     display: flex;
+    
     align-items: center;
+    @include breakpoint($mobile-bp-sm) {
+        flex-wrap: wrap;
+    }
+    @include breakpoint($mobile-bp-ultra-sm) {
+        flex-direction: column;
+    }
 }
 .created-footer {
     display: flex;
@@ -101,6 +134,11 @@
     width: 32.1%;
     max-width: 34rem;
     text-align: center;
+    @include breakpoint($mobile-bp-ultra-sm) {
+        margin-bottom: 1.5rem;
+        width: 100%;
+        max-width: 100%;
+    }
 }
 .created-footer__item-img {
     margin: 0 auto 2rem;

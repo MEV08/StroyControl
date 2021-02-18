@@ -1,5 +1,8 @@
 .clients {
     margin-bottom: 14.9rem;
+    @include breakpoint($mobile-bp-sm) {
+        margin-bottom: 6rem;
+    }
 }
 .clients-title {
     margin-bottom: 1.7rem;
@@ -8,6 +11,9 @@
     line-height: 1.5;
     color: $black;
     text-align: center;
+    @include breakpoint($mobile-bp-sm) {
+        font-size: 2.5rem;
+    }
 }
 .clients-subtitle {
     margin-bottom: 5.5rem;
@@ -16,14 +22,17 @@
     line-height: 1.6;
     color: $black;
     text-align: center;
+    @include breakpoint($mobile-bp-sm) {
+        font-size: 1.5rem;
+        margin-bottom: 3rem;
+    }
 }
 .clients-inner {
     margin-bottom: 12.7rem;
     display: flex;
     flex-wrap: wrap;
-    // 
+    
     position: relative;
-    // 
 }
 .clients-advantages {
     margin-right: 7.8rem;
@@ -46,6 +55,9 @@
     }
     &:nth-child(2) {
         padding-right: 3.8rem;
+        @include breakpoint($tablet-bp) {
+            padding-right: 0;
+        }
     }
     &:nth-child(3) {
         padding-right: 1.8rem;
@@ -54,11 +66,21 @@
         padding-right: 0;
         width: 50%;
     }
+    @include breakpoint($mobile-bp) {
+        padding-left: 4rem;
+    }
+    @include breakpoint($mobile-bp-sm) {
+        width: 100%;
+    }
 }
 .clients__item-img {
     position: absolute;
     top: 0;
     left: 0;
+    @include breakpoint($mobile-bp) {
+        height: 3rem;
+        width: 3rem;
+    }
 }
 .clients-item__title {
     margin-bottom: 1rem;
@@ -75,6 +97,7 @@
 }
 .clients-reviews {
     max-width: 61.4rem;
+    height: 100%;
     max-height: 51.6rem;
     background-color: #F6F8F9;
     border-radius: 5px;
@@ -87,12 +110,33 @@
         position: static;
         width: 100%;
         max-width: 105rem;
+        
+    }
+    @include breakpoint($mobile-bp-sm) {
+        padding: 2rem;
+    }
+}
+.reviews-slider {
+    height: 41.4rem;
+    overflow: hidden;
+    &.slick-initialized {
+        height: auto;
+        overflow: visible;
     }
 }
 .clients-reviews__item {
-    padding-top: 1.5rem;
-    padding-left: 4.5rem;
+    width: 100%;
+    height: 100%;
+    max-height: 41.4rem;
+    padding: 1.5rem 0 3.6rem 4.5rem;
     position: relative;
+
+    @include breakpoint($desktop-sm) {
+        height: auto;
+    }
+    @include breakpoint($mobile-bp-sm) {
+        
+    }
 }
 .clients-reviews__item-img {
     position: absolute;
@@ -105,6 +149,12 @@
     font-weight: 400;
     line-height: 1.6;
     color: $black;
+    @include breakpoint($mobile-bp-sm) {
+        font-size: 2rem;
+    }
+    @include breakpoint($mobile-bp-ultra-sm) {
+        font-size: 1.5rem;
+    }
 }
 .clients-person {
     display: flex;
@@ -118,12 +168,18 @@
     font-weight: 400;
     line-height: 1.18;
     color: $black;
+    @include breakpoint($mobile-bp-ultra-sm) {
+        font-size: 1.2rem;
+    }
 }
 .clients-person__position {
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.18;
     color: $grey;
+    @include breakpoint($mobile-bp-ultra-sm) {
+        font-size: 1.2rem;
+    }
 }
 .clients-logos {
     margin: 0 auto;
@@ -135,8 +191,10 @@
 
     @include breakpoint($tablet-bp-wide) {
         margin: 0;
+        width: 100%;
         max-width: 100%;
         justify-content: space-between;
+        overflow: hidden;
     }
 }
 .clients-logos__item {  
@@ -176,6 +234,38 @@
             margin-bottom: 4.1rem; 
         }
     }
+    @include breakpoint($mobile-bp) {
+        width: 50%;
+        text-align: center;
+        &:nth-child(1) {
+            max-width: 50%;
+        }
+        &:nth-child(2) {
+            max-width: 50%;
+        }
+        &:nth-child(3) {
+            max-width: 50%;
+        }
+        &:nth-child(4) {
+            max-width: 50%;
+        }
+    }
+    @include breakpoint($mobile-bp-ultra-sm) {
+        width: 100%;
+        text-align: center;
+        &:nth-child(1) {
+            max-width: 100%;
+        }
+        &:nth-child(2) {
+            max-width: 100%;
+        }
+        &:nth-child(3) {
+            max-width: 100%;
+        }
+        &:nth-child(4) {
+            max-width: 100%;
+        }
+    }
 }
 .clients-logos__img {
     position: absolute;
@@ -184,5 +274,57 @@
 
     &--second {
         top: 1.2rem;
+        @include breakpoint($mobile-bp) {
+            top: 0;
+        }
     }
+    @include breakpoint($mobile-bp) {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+.clients-logos__txt {
+    @include breakpoint($mobile-bp-sm) {
+        padding: 0 1rem;
+    }
+}
+.slick-dots {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    width: 50%;
+    bottom: 0;
+    left: 45px;
+    z-index: 150;
+
+    .slick-active button {
+        background: rgba(3, 111, 199, 0.2);
+    }
+
+    button {
+        margin-right: .8rem;
+        width: 8px;
+        height: 8px;
+        padding: 0;
+        border: 0;
+        background: $blue;
+        font-size: 0;
+        color: transparent;
+        border-radius: 50%;
+        outline: 0;
+        cursor: pointer;
+        
+    }
+    @include breakpoint($desktop-sm) {
+    //    display: none;
+    }
+}
+.slick-slide {
+    outline: 0;
+}
+.slick-track {
+    width: auto;
+    height: 100%;
 }

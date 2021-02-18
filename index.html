@@ -3,34 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <title>StroyControl</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-<header class="header">
-    <div class="header-logo">
-        <img src="img/header-logo.svg"  alt="Logo" class="header-logo__img">
-        <div class="header-logo__txt">Стройконтроль</div>
-    </div>
-    <div class="header-navbar">
-        <nav class="header-nav">
-            <a href="#" class="header-nav__link link-active">Главная</a>
-            <a href="#" class="header-nav__link">О нас</a>
-            <a href="#" class="header-nav__link">Продукция</a>
-            <a href="#" class="header-nav__link">Процесс</a>
-            <a href="#" class="header-nav__link">Надёжность</a>
-            <a href="#" class="header-nav__link">Клиенты</a>
-            <a href="#" class="header-nav__link">Связаться с нами</a>
-        </nav>
-        <a href="" class="btn btn--sm">Заказать демо</a>
-    </div>
-    <button class="burger" type="button">
-        <span>Menu</span>
-    </button>
-</header><!--/.Header-->
-<div class="intro">
+<div class="intro" id="intro">    
+    <header class="header" id="header">
+        <div class="header-inner">
+            <div class="header-logo">
+                <img src="img/header-logo.svg"  alt="Logo" class="header-logo__img">
+                <div class="header-logo__txt">Стройконтроль</div>
+            </div>
+            <div class="header-navbar" id="nav">
+                <nav class="header-nav" >
+                    <a href="#" class="header-nav__link" data-scroll="#intro" id="navLink">Главная</a>
+                    <a href="#" class="header-nav__link" data-scroll="#about" id="navLink">О нас</a>
+                    <a href="#" class="header-nav__link" data-scroll="#delivery" id="navLink">Продукция</a>
+                    <a href="#" class="header-nav__link" data-scroll="#howtowork" id="navLink">Процесс</a>
+                    <a href="#" class="header-nav__link" data-scroll="#reliability" id="navLink">Надёжность</a>
+                    <a href="#" class="header-nav__link" data-scroll="#clients" id="navLink">Клиенты</a>
+                    <a href="#" class="header-nav__link" data-scroll="#contact" id="navLink">Связаться с нами</a>
+                </nav>
+                <a href="" class="btn btn--sm">Заказать демо</a>
+            </div>
+            <button class="burger" type="button" id="navToggle">
+                <span>Menu</span>
+            </button>
+        </div>
+    </header><!--/.Header-->
+
     <div class="container-2">
         <h1 class="intro-title">Умная доставка материалов для сложных строительных площадок</h1>
         <div class="buttons-block">
@@ -139,7 +144,7 @@
     </div>
 </div><!--/.logos-->
 <hr class="delimiter">
-<div class="about">
+<div class="about" id="about">
     <div class="container-1">
         <h1 class="about-title">Что такое СтройКонтроль?</h1>
         <div class="about-title__txt">СтройКонтроль - это интеллектуальная система управления доставкой, предоставляющая информацию и контроль материалов на сложных строительных площадках в режиме реального времени.</div>
@@ -173,7 +178,7 @@
         </div>
     </div>
 </div><!--/.about-->
-<div class="delivery">
+<div class="delivery" id="delivery">
     <div class="container-1">
         <h1 class="delivery-title">Доставка стала проще</h1>
         <h3 class="delivery-subtitle">Мы позаботимся обо всех ваших различных поставках и их многочисленных специализированных требованиях к разгрузке.</h3>
@@ -258,7 +263,7 @@
     </div><!-- /.Container-1-->
 </div><!--/.Delivery-->
 
-<div class="reliability">
+<div class="reliability" id="reliability">
     <div class="container-1">
         <div class="reliability-header">
             <img class="reliability-header__img" src="img/leaf.svg" alt="">
@@ -292,7 +297,7 @@
                 <div class="reliability-footer__txt">
                     <b>Надёжная конструкция</b>  СтройКонтроль входит в стандартную комплектацию.
                 </div>
-                <button class="btn btn--light">Подробнее</button>
+                <button class="btn btn--light btn--helper">Подробнее</button>
             </div>
         </div>
     </div>
@@ -346,7 +351,7 @@
         </div>
     </div>
 </div><!-- ./Created-->
-<div class="howtowork">
+<div class="howtowork" id="howtowork">
     <div class="container-1">
         <div class="howtowrk-content">
             <div class="howtowork-left">
@@ -376,14 +381,14 @@
                     <div class="howtowork-right__item-txt">Мы настраиваем программное обеспечение так, чтобы оно точно моделировало вашу площадку, а затем помогаем вам интегрировать его с программным обеспечением Business Intelligence для получения новых мощных аналитических данных.</div>
                 </div>
                 <div class="buttons">
-                    <button class="btn">Заказать демо</button>
-                    <button class="btn btn--light">Подробнее</button>
+                    <button class="btn btn--helper">Заказать демо</button>
+                    <button class="btn btn--light btn--helper">Подробнее</button>
                 </div>
             </div>
         </div>
     </div>
 </div><!--./Howtowork-->
-<div class="clients">
+<div class="clients" id="clients">
     <div class="container-1">
         <h1 class="clients-title">Почему нужно выбрать нас?</h1>
         <h2 class="clients-subtitle">В строительной логистике всегда есть возможности для улучшения.</h2>
@@ -412,14 +417,27 @@
             </div>
 
             <div class="clients-reviews">
-                <div class="clients-reviews__item">
-                    <img class="clients-reviews__item-img" src="img/clients/quotes.png" alt="">
-                    <div class="clients-reviews__item-txt">Мы видим огромный потенциал в таких решениях, как СтройКонтроль, и хотим использовать их для улучшения наших строительных процессов.</div>
-                    <div class="clients-person">
-                        <img class="clients-person__avatar" src="img/clients/avatar.jpg" alt="">
-                        <div class="clients-preson__info">
-                            <div class="clients-person__name">Волков Матвей</div>
-                            <div class="clients-person__position">Генеральный директор ООО “СпецСтрой”</div>
+                <div class="reviews-slider" id="reviewsSlider">
+                    <div class="clients-reviews__item">
+                        <img class="clients-reviews__item-img" src="img/clients/quotes.png" alt="">
+                        <div class="clients-reviews__item-txt">Мы видим огромный потенциал в таких решениях, как СтройКонтроль, и хотим использовать их для улучшения наших строительных процессов.</div>
+                        <div class="clients-person">
+                            <img class="clients-person__avatar" src="img/clients/avatar.jpg" alt="">
+                            <div class="clients-preson__info">
+                                <div class="clients-person__name">Волков Матвей</div>
+                                <div class="clients-person__position">Генеральный директор ООО “СпецСтрой”</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clients-reviews__item">
+                        <img class="clients-reviews__item-img" src="img/clients/quotes.png" alt="">
+                        <div class="clients-reviews__item-txt">Мы видим невероятный потенциал в работе со СтройКонтроль, и хотим использовать их для улучшения наших рабочих процессов.</div>
+                        <div class="clients-person">
+                            <img class="clients-person__avatar" src="img/clients/avatar.jpg" alt="">
+                            <div class="clients-preson__info">
+                                <div class="clients-person__name">Марков Игорь</div>
+                                <div class="clients-person__position">Генеральный директор ООО “Водоканал”</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -446,13 +464,13 @@
     </div>
 </div><!-- /. Clients-->
 
-<div class="contact">
+<div class="contact" id="contact">
     <div class="container-1">
         <div class="contact-inner">
             <h1 class="contact-title">Готовы оптимизировать логистику доставки для вашего сложного проекта?</h1>
             <div class="buttons-block">
-                <button class="btn">Заказать демо</button>
-                <button class="btn btn--light">Связаться с нами</button>
+                <button class="btn btn--extra">Заказать демо</button>
+                <button class="btn btn--light btn--extra">Связаться с нами</button>
             </div>
         </div>
         <div class="contact-nav">
@@ -492,5 +510,7 @@
         </div>
     </div>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="main.js"></script>
 </body>
 </html>

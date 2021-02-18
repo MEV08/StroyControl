@@ -1,5 +1,8 @@
 .delivery {
     margin-bottom: 12.4rem;
+    @include breakpoint($mobile-bp) {
+        margin-bottom: 8.4rem;
+    }
 }
 .delivery-title {
     margin-bottom: 2.1rem;
@@ -8,6 +11,9 @@
     line-height: 1.5;
     color: $black;
     text-align: center;
+    @include breakpoint($mobile-bp-sm) {
+        font-size: 2.5rem;
+    }
 }
 .delivery-subtitle {
     margin-bottom: 4.3rem;
@@ -18,11 +24,18 @@
     line-height: 1.6;
     color: $grey;
     text-align: center;
+    @include breakpoint($tablet-bp) {
+        padding: 0;
+    }
+    @include breakpoint($mobile-bp) {
+        font-size: 1.8rem;
+    }
 }
 .delivery-blocks {
     @include breakpoint($tablet-bp-wide) {
         height: auto;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
     }
 }
@@ -39,6 +52,12 @@
         width: 30%;
         flex-direction: column;
         flex-wrap: nowrap;
+    }
+    @include breakpoint($tablet-bp) {
+        
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 .delivery-blocks__item {
@@ -59,6 +78,11 @@
         height: 32%;
         margin-right: 0;
         margin-bottom: 3rem;
+    }
+    @include breakpoint($tablet-bp) {
+        // padding-left: 5.7rem;
+        height: auto;
+        
     }
 }
 .delivery-blocks__item-img {
@@ -84,14 +108,18 @@
 }
 .delivery-footer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     font-size: 2rem;
     font-weight: 400;
     line-height: 1.6;
     color: $grey;
+    @include breakpoint($mobile-bp-sm) {
+        justify-content: start;
+    }
 }
 .delivery-footer__colored-txt {
     margin-right: .4rem;
-    background: url(/img/delivery/delivery-footer-bg.png) center bottom no-repeat;
+    background: url(../img/delivery/delivery-footer-bg.png) center bottom no-repeat;
     color: $black;
 }

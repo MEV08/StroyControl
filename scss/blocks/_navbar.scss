@@ -3,6 +3,16 @@
 
     @include breakpoint($tablet-bp-wide) {
         display: none;
+        width: 100%;
+        position: absolute;
+        right: 0;
+        top: 100%;
+        flex-direction: column;
+        background-color: $white;
+        margin: 0 auto;
+    }
+    &.show {
+        display: flex;
     }
 }
 .header-nav {
@@ -11,6 +21,10 @@
     align-items: center;
     @include breakpoint($desktop-sm) {
         margin-right: 1rem;
+    }
+    @include breakpoint($tablet-bp-wide) {
+        flex-direction: column;
+        margin-right: 0;
     }
 }
 .header-nav__link {
@@ -24,11 +38,17 @@
     &:hover {
         color: $blue;
     }
+    &.active-link {
+        color: $blue;
+    }
 
     @include breakpoint($desktop-sm) {
         margin-right: 0.8rem;
     }
-}
-.link-active {
-    color: $blue;
+    @include breakpoint($tablet-bp-wide) {
+        width: 100%;
+        margin-right: 0;
+        padding: 1rem;
+        text-align: center;
+    }
 }

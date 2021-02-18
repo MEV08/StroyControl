@@ -5,9 +5,15 @@
     margin-right: 5rem;
     display: flex;
     flex-wrap: wrap;
+    @include breakpoint($tablet-bp) {
+        margin-right: 0;
+    }
 }
 .care-main__left {
     width: 54%;
+    @include breakpoint($mobile-bp) {
+        width: 100%;
+    }
 }
 .care-main__left-title {
     margin-bottom: 1.6rem;
@@ -15,6 +21,12 @@
     font-weight: 400;
     line-height: 1.5;
     color: $black;
+    @include breakpoint($tablet-bp) {
+        font-size: 2.5rem;
+    }
+    @include breakpoint($mobile-bp) {
+        font-size: 2rem;
+    }
 }
 .care-main__left-txt {
     margin-bottom: 2.8rem;
@@ -22,6 +34,13 @@
     font-weight: 400;
     line-height: 1.6;
     color: $grey;
+    @include breakpoint($tablet-bp) {
+        font-size: 1.7rem;
+    }
+    @include breakpoint($mobile-bp) {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
 }
 .care-main__left-slogan {
     width: 25rem;
@@ -34,6 +53,9 @@
 }
 .care-main__right {
     width: 46%;
+    @include breakpoint($mobile-bp) {
+        width: 100%;
+    }
 }
 .care-main__img {
     display: block;

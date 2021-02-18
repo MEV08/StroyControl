@@ -1,11 +1,16 @@
 .intro {
-    margin-top: 7.4rem;
-
+    height: auto;
+    padding-top: 17rem;
+    padding-bottom: 14.8rem;
+    position: relative;
     @include breakpoint($tablet-bp) {
-        margin-top: 1.4rem;
+        padding-top: 9rem;
     }
-    @include breakpoint($mobile-bp-sm) {
-        margin-top: 2.4rem;
+    @include breakpoint($tablet-bp) {
+        padding-bottom: 9.8rem;
+    }
+    @include breakpoint($mobile-bp) {
+        padding-bottom: 4.8rem;
     }
 }
 .intro-title {
@@ -18,9 +23,9 @@
 
     @include breakpoint($tablet-bp) {
         font-size: 3.8rem;
+        line-height: 5.4rem;
     }
     @include breakpoint($mobile-bp) {
-        line-height: 5.4rem;
         padding: 0 4.1rem;
     }
     @include breakpoint($mobile-bp-sm) {
@@ -42,8 +47,8 @@
     }
 }
 .intro-img {
-    text-align: center;
-    margin-bottom: 14.8rem;
+    // text-align: center;
+    height: auto;
 
     @include breakpoint ($mobile-bp) {
         margin-bottom: 4.8rem;

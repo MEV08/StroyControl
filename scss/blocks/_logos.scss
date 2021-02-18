@@ -1,9 +1,16 @@
 .logos {
     margin: 5.6rem 0;
+
+    @include breakpoint($tablet-bp) {
+        margin: 5rem 0;
+    }
 }
 .logos-block {
     display: flex;
     flex-wrap: wrap;
+    @include breakpoint($mobile-bp) {
+        justify-content: center;
+    }
 }
 .logos-block__item  {
     margin-right: 3.9rem;
@@ -15,6 +22,9 @@
     }
     &:last-child {
         margin: 0 auto;
+        @include breakpoint($mobile-bp-ultra-sm) {
+            margin: 0;
+        }
     }
 
     @include breakpoint($tablet-bp-wide) {
@@ -36,5 +46,8 @@
 
     @include breakpoint($tablet-bp-wide) {
         max-width: 15rem;
+    }
+    @include breakpoint($tablet-bp) {
+        max-width: 100%;
     }
 }

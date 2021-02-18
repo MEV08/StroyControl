@@ -7,6 +7,12 @@
         margin-bottom: 11.2rem;
         justify-content: space-between;
     }
+    @include breakpoint($mobile-bp) {
+        margin-bottom: 6.2rem;
+    }
+    @include breakpoint($mobile-bp-sm) {
+        justify-content: center;
+    }
 }
 .improvements-block {
     margin-right: 4rem;
@@ -23,6 +29,10 @@
         width: 30%;
         height: auto;
         max-height: 100%;
+    }
+    @include breakpoint($mobile-bp-sm) {
+        width: 100%;
+        margin-bottom: 1rem;
     }
 }
 .improvements-block__img {

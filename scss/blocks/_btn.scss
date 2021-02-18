@@ -22,6 +22,9 @@
         background-color: lighten($black, 5%);
         box-shadow: 0 7px 17px  rgba($black, .7);
     }
+    @include breakpoint($mobile-bp-ultra-sm) {
+        padding: .77em 1em;
+    }
     &--sm {
         padding: 0.6em 1.33em;
         font-size: 1.5rem;
@@ -30,6 +33,12 @@
         &:hover {
             background: lighten($black, 5%);
             box-shadow: 0 5px 8px  rgba($black, .7);
+        }
+        @include breakpoint($tablet-bp-wide) {
+            display: none;
+        }
+        @include breakpoint($mobile-bp-sm) {
+            text-align: center;
         }
     }
     &--light {
@@ -50,11 +59,14 @@
         background: $white; 
         color: $black;
         border: none;
-        // border: 1px solid $light-grey;
+        
 
         &:hover {
             background: darken($white, 15%);
             box-shadow: 0 7px 13px rgba($white, 0.3);
+        }
+        @include breakpoint($mobile-bp-sm) {
+            max-width: 16.6rem;
         }
     }
     &--right {
@@ -67,6 +79,16 @@
             background: lighten($black, 2%);
             box-shadow: 0 7px 13px rgba($white, 0.3);
         }
+        @include breakpoint($mobile-bp-sm) {
+            max-width: 16.6rem;
+        }
+    }
+    &--helper {
+        min-width: 15.5rem;
+        max-width: 16.8rem;
+    }
+    &--extra {
+        min-width: 20.3rem;
     }
     @include breakpoint($mobile-bp-sm) {
         width: 50%;
@@ -91,6 +113,7 @@
     font-size: 0;
     color: transparent;
     cursor: pointer;
+    outline: none;
 
     &:before,
     &:after,

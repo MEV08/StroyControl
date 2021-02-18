@@ -1,5 +1,8 @@
 .reliability {
     margin-bottom: 14.4rem;
+    @include breakpoint($mobile-bp-sm) {
+        margin-bottom: 8.4rem;
+    }
 }
 .reliability-header {
     margin: 0 auto 1.7rem;
@@ -22,7 +25,8 @@
     bottom: 0;
 }
 .reliability-main {
-    margin-bottom: 6.2rem;
+    padding-bottom: 6.2rem;
+    
 }
 .reliability-main__txt {
     margin: 0 10rem 4.8rem 9.9rem;
@@ -31,9 +35,20 @@
     line-height: 1.6;
     color: $grey;
     text-align: center;
+    @include breakpoint($mobile-bp) {
+        margin: 0 0 4.8rem;
+    }
+    @include breakpoint($mobile-bp-sm) {
+        font-size: 1.5rem;
+    }
 }
 .reliability-main__block {
     display: flex;
+    flex-wrap: wrap;
+
+    @include breakpoint($tablet-bp-wide) {
+        justify-content: space-between;
+    }
 }
 .reliability-main__block-item {
     margin-right: 3.3rem;
@@ -54,11 +69,48 @@
         max-width: 32.5rem;
     }
     @include breakpoint($tablet-bp-wide) {
-        height: auto;
+        width: auto;
+        max-height: 100%;
+        margin: 0;
+
+        &:nth-child(1) {
+            max-width: 31%;
+        }
+        &:nth-child(2) {
+            max-width: 31%;
+        }
+        &:nth-child(3) {
+            max-width: 31%;
+        }
+    }
+    @include breakpoint($mobile-bp) {
+        &:nth-child(1) {
+            max-width: 100%;
+        }
+        &:nth-child(2) {
+            max-width: 100%;
+        }
+        &:nth-child(3) {
+            max-width: 100%;
+        }
+    }
+    @include breakpoint($mobile-bp-ultra-sm) {
+        &:nth-child(1) {
+            margin-bottom: 1rem;
+        }
+        &:nth-child(2) {
+            margin-bottom: 1rem;
+        }
+        &:nth-child(3) {
+            margin-bottom: 1rem;
+        }
     }
 }
 .reliability-block__item-img {
     margin-bottom: 1.9rem;
+    @include breakpoint($mobile-bp-ultra-sm) {
+        margin-bottom: 1rem;
+    }
 }
 .reliability-block__item-title {
     margin-bottom: 1.1rem;
@@ -84,6 +136,10 @@
 .reliability-footer__content {
     display: flex;
     align-items: center;
+    @include breakpoint($mobile-bp-sm) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 .reliability-footer__logo-img {
     width: 3.567rem;
@@ -95,4 +151,8 @@
     font-weight: 500;
     line-height: 2;
     color: $black;
+    @include breakpoint($mobile-bp-sm) {
+        padding: .9rem 0;
+        text-align: center;
+    }
 }

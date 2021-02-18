@@ -1,5 +1,8 @@
 .contact {
     margin-bottom: 16rem;
+    @include breakpoint($mobile-bp) {
+        margin-bottom: 5rem;
+    }
 }
 .contact-inner {
     margin-bottom: 15rem;
@@ -9,6 +12,16 @@
     background: url("/img/contact-bg.png") center no-repeat;
     background-size: cover;
     text-align: center;
+    @include breakpoint($tablet-bp) {
+        margin-bottom: 10rem;
+    }
+    @include breakpoint($mobile-bp) {
+        height: auto;
+    }
+    @include breakpoint($mobile-bp-sm) {
+        padding: 4rem 1.8rem;
+        margin-bottom: 5rem;
+    }
 }
 .contact-title {
     margin-bottom: 5.4rem;
@@ -16,6 +29,13 @@
     font-weight: 400;
     line-height: 1.33;
     color: $black;
+    @include breakpoint($tablet-bp) {
+        margin-bottom: 0;
+        font-size: 3.8rem;
+    }
+    @include breakpoint($mobile-bp) {
+        font-size: 2.8rem;
+    }
 }
 .contact-nav {
     display: flex;
@@ -32,11 +52,29 @@
     @include breakpoint($tablet-bp-wide) {
         width: 20%;
     }
+    @include breakpoint($tablet-bp) {
+        width: 25%;
+    }
+    @include breakpoint($tablet-bp) {
+        width: 100%;
+        text-align: center;
+    }
+    @include breakpoint($mobile-bp) {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    @include breakpoint($mobile-bp-sm) {
+        margin-bottom: 1rem;
+    }
 }
 .contact-logo {
     margin-bottom: 2.2rem;
     display: flex;
     align-items: center;
+    
+    @include breakpoint($mobile-bp) {
+        justify-content: center;
+    }
 }
 .contact-logo__img {
     margin-right: .8rem;
@@ -70,6 +108,9 @@
     width: 2.4rem;
     height: 2.4rem;
     margin-top: 2rem;
+    @include breakpoint($mobile-bp) {
+        margin: 1rem auto 0;
+    }  
 }
 .contact-nav__item {
     display: flex;
@@ -80,6 +121,13 @@
         margin-left: 0;
         width: 20%;
     }
+    @include breakpoint($mobile-bp-sm) {
+        width: 30%;
+        text-align: center;
+    }
+    @include breakpoint($mobile-bp-ultra-sm) {
+        width: 100%;
+    }
 }
 .contact-nav__title {
     margin-bottom: 2.2rem;
@@ -87,6 +135,9 @@
     font-weight: 400;
     line-height: 1.5;
     color: $black;
+    @include breakpoint($mobile-bp-ultra-sm) {
+        margin-bottom: 1rem;
+    }
 }
 .contact-nav__link {
     margin-bottom: 0.8rem;

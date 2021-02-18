@@ -28,6 +28,11 @@ h1, h2, h3, h4, h5, h6, p, hr {
     max-width: 1086px;
     padding: 0 15px;
     margin: 0 auto;
+    @include breakpoint($mobile-bp) {
+        padding: 0 5px;
+        // 
+        overflow: hidden;
+    }
 }
 // container (200px)
 .container-2 {
@@ -35,6 +40,9 @@ h1, h2, h3, h4, h5, h6, p, hr {
     max-width: 1070px;
     padding: 0 15px;
     margin: 0 auto;
+    @include breakpoint($mobile-bp) {
+        padding: 0 5px;
+    }
 }
 
 /* Blocks */
